@@ -87,6 +87,14 @@ RUN apt install -y \
     libusb-1.0-0-dev
 RUN apt-get install -y \
     ros-${ROS_DISTRO}-tf-transformations \
+    ros-${ROS_DISTRO}-gazebo-* \
+    ros-${ROS_DISTRO}-cartographer \
+    ros-${ROS_DISTRO}-cartographer-ros \
+    ros-${ROS_DISTRO}-navigation2 \
+    ros-${ROS_DISTRO}-nav2-bringup \
+    ros-${ROS_DISTRO}-dynamixel-sdk \
+    ros-${ROS_DISTRO}-turtlebot3-msgs \
+    ros-${ROS_DISTRO}-turtlebot3 \
     python3-pip
 RUN pip3 install rowan cflib transforms3d
 WORKDIR turtlebot3 
